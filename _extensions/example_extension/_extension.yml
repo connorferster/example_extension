@@ -1,0 +1,13 @@
+title: example_extension
+contributes:
+  formats: 
+    pdf:
+      template: template.tex
+      font-paths:
+        main: _extensions/example_extension/Ubuntu
+        code: _extensions/example_extension/CaskaydiaCove
+      catch: # This key chosen to demonstrate that the keys do not mater
+        main:
+          name: Ubuntu # <----- THIS VALUE GETTING SUBSTITUTED
+        code:
+          name: "CaskaydiaCove" # <------- THIS VALUE GETTING SUBSTITUTED
